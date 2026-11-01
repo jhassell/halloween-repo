@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agentic Systems Tutorial</title>
+<style>
+  body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 20px; background: #f9f9f9; color: #333; }
+  h1, h2, h3 { color: #2c3e50; }
+  .container { max-width: 800px; margin: auto; background: white; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  code { background: #eee; padding: 2px 4px; border-radius: 4px; }
+  pre { background: #eee; padding: 10px; border-radius: 4px; overflow-x: auto; }
+  .example { background: #e8f4fc; border-left: 4px solid #3498db; padding: 15px; margin: 20px 0; }
+  .resources { background: #f0f7f0; border-left: 4px solid #2ecc71; padding: 15px; margin: 20px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Agentic Systems Tutorial</h1>
+  <p>Agentic systems are AI systems that can perceive their environment, make decisions, and take actions to achieve specific goals without constant human intervention. They combine large language models (LLMs) with tools, memory, and planning capabilities to act autonomously.</p>
+
+  <h2>Key Components</h2>
+  <ul>
+    <li><strong>Perception:</strong> The system gathers information from its environment through sensors, APIs, or user input.</li>
+    <li><strong>Reasoning:</strong> Using an LLM or other AI model, the system processes information, plans actions, and anticipates outcomes.</li>
+    <li><strong>Action:</strong> The system executes decisions by interacting with tools, APIs, or physical actuators.</li>
+    <li><strong>Memory:</strong> Short-term and long-term storage to retain context, learn from past actions, and maintain state.</li>
+    <li><strong>Tools:</strong> External capabilities (like web search, calculators, databases) that the agent can invoke to extend its abilities.</li>
+  </ul>
+
+  <h2>How Agentic Systems Work</h2>
+  <p>A typical agentic system follows a loop:</p>
+  <ol>
+    <li>Observe the current state and goals.</li>
+    <li>Think: Use the LLM to reason about what actions to take.</li>
+    <li>Act: Execute the chosen action using available tools.</li>
+    <li>Learn: Update memory and internal models based on the outcome.</li>
+    <li>Repeat until the goal is achieved or a stopping condition is met.</li>
+  </ol>
+
+  <div class="example">
+    <h3>Simple Example: A Web Research Agent</h3>
+    <p>Imagine an agent tasked with finding the latest news about a topic:</p>
+    <pre>
+Goal: Find recent news about renewable energy advancements.
+1. Observe: No current information, need to search.
+2. Think: I should use a web search tool for "renewable energy news 2024".
+3. Act: Invoke web search tool with the query.
+4. Learn: Receive results, store them in memory, and decide if more detail is needed.
+5. Repeat: If satisfied, summarize and present; otherwise, refine search.
+    </pre>
+  </div>
+
+  <h2>Building Blocks</h2>
+  <p>To build an agentic system, you typically need:</p>
+  <ul>
+    <li>An LLM (like GPT-4, Claude, or open-source alternatives)</li>
+    <li>A framework for chaining thoughts and actions (e.g., LangChain, LlamaIndex, or custom loops)</li>
+    <li>Integrations with tools (APIs, databases, file systems)</li>
+    <li>Memory management (vector stores for long-term memory, conversation buffers for short-term)</li>
+    <li>Safety checks and guardrails to prevent harmful actions</li>
+  </ul>
+
+  <div class="resources">
+    <h2>Resources to Learn More</h2>
+    <ul>
+      <li><a href="https://lilianweng.github.io/posts/2023-06-23-agent/">LLM-Powered Autonomous Agents</a> by Lilian Weng</li>
+      <li><a href="https://langchain.com/">LangChain</a> - Framework for building LLM applications</li>
+      <li><a href="https://www.llamaindex.ai/">LlamaIndex</a> - Data framework for LLM applications</li>
+      <li><a href="https://github.com/significant-gravitas/AutoGPT">AutoGPT</a> - Early example of an autonomous agent</li>
+      <li><a href="https://arxiv.org/abs/2309.01732">ReAct: Synergizing Reasoning and Acting in LLMs</a> (paper)</li>
+    </ul>
+  </div>
+
+  <p><em>This tutorial was created as part of a workshop on agentic systems.</em></p>
+</div>
+</body>
+</html>
